@@ -1,0 +1,6 @@
+import requests
+from bs4 import BeautifulSoup
+
+oyo_url="https://www.oyorooms.com/search?location=Bengaluru%2C%20Karnataka%2C%20India&latitude=12.9715987&longitude=77.5945627&searchType=locality&checkin=10%2F07%2F2023&checkout=11%2F07%2F2023&roomConfig%5B%5D=1&guests=1&rooms=1"
+req= requests.get(oyo_url)
+content= req.content
